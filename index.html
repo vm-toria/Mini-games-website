@@ -1,11 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mini games website</title>
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    
+    <main class="all-blocks-container">
+        <section class="main-block">
+            <img src="./images/main-block/background-icon-big.png" alt="background icon"
+                class="main-block__background-big-image">
+            <img src="./images/main-block/background-icon-medium.png" alt="background icon"
+                class="main-block__background-medium-image">
+            <img src="./images/main-block/background-icon-small.png" alt="background icon"
+                class="main-block__background-small-image">
+            <h1 class="main-block__title">Welcome to <br> mini games site</h1>
+            <p class="main-block__description">You have to go through several exciting games. <br> If you're ready,
+                click
+                <b>"Let's go!"</b> and <b>get started.</b>
+            </p>
+            <a href="#about-games" class="main-block__cta">Let's go!</a>
+            <div class="main-block__animation-stroke">
+                <span class="main-block__animation-stroke-text">Random color generator</span>
+                <img src="./images/main-block/star.png" class="main-block__animation-stroke-icon" alt="Star icon">
+                <span class="main-block__animation-stroke-text">Rock, paper, scissors</span>
+                <img src="./images/main-block/star.png" class="main-block__animation-stroke-icon" alt="Star icon">
+                <span class="main-block__animation-stroke-text">Simple arithmetic</span>
+                <img src="./images/main-block/star.png" class="main-block__animation-stroke-icon" alt="Star icon">
+                <span class="main-block__animation-stroke-text">Flip the text</span>
+                <img src="./images/main-block/star.png" class="main-block__animation-stroke-icon" alt="Star icon">
+                <span class="main-block__animation-stroke-text">Guess the number</span>
+                <img src="./images/main-block/star.png" class="main-block__animation-stroke-icon" alt="Star icon">
+                <span class="main-block__animation-stroke-text">Quiz</span>
+                <img src="./images/main-block/star.png" class="main-block__animation-stroke-icon" alt="Star icon">
+            </div>
+        </section>
+        <section class="about-games-block">
+            <img src="./images/about-games-block/background-icon-big.png" alt="background icon"
+                class="about-games-block__background-big-image">
+            <img src="./images/about-games-block/background-icon-medium.png" alt="background icon"
+                class="about-games-block__background-medium-image">
+            <img src="./images/about-games-block/background-icon-small.png" alt="background icon"
+                class="about-games-block__background-small-image">
+            <h1 class="about-games-block__title">About games</h1>
+            <p class="about-games-block__description">My collection includes 6 games on different topics. <br> The games
+                are
+                simple and anyone can play them. <br>
+                All games are available for use.</p>
+            <div class="about-games-block__container-game-card">
+                <a href="#guess-the-number" class="about-games-block__game-card">
+                    <img src="./images/about-games-block/guess-the-number.png" alt="Game image"
+                        class="about-games-block__game-card-image">
+                    <span class="about-games-block__game-card-description">Game No. 1</span>
+                    <h3 class="about-games-block__game-card-name">Guess the number</h3>
+                </a>
+                <a href="#simple-arithmetic" class="about-games-block__game-card">
+                    <img src="./images/about-games-block/simple-arithmetic.png" alt="Game image"
+                        class="about-games-block__game-card-image">
+                    <span class="about-games-block__game-card-description">Game No. 2</span>
+                    <h3 class="about-games-block__game-card-name">Simple <br> arithmetic</h3>
+                </a>
+                <a href="#flip-the-text" class="about-games-block__game-card">
+                    <img src="./images/about-games-block/flip-the-text.png" alt="Game image"
+                        class="about-games-block__game-card-image">
+                    <span class="about-games-block__game-card-description">Game No. 3</span>
+                    <h3 class="about-games-block__game-card-name">Flip the text</h3>
+                </a>
+                <a href="#rock-paper-scissors" class="about-games-block__game-card position">
+                    <img src="./images/about-games-block/rock-paper-scissors.png" alt="Game image"
+                        class="about-games-block__game-card-image">
+                    <span class="about-games-block__game-card-description">Game No. 4</span>
+                    <h3 class="about-games-block__game-card-name">Rock,<br> paper,<br> scissors</h3>
+                </a>
+                <a href="#basic-quiz" class="about-games-block__game-card">
+                    <img src="./images/about-games-block/quiz.png" alt="Game image"
+                        class="about-games-block__game-card-image">
+                    <span class="about-games-block__game-card-description">Game No. 5</span>
+                    <h3 class="about-games-block__game-card-name">Basic <br> quiz</h3>
+                </a>
+                <a href="#random-color-generator" class="about-games-block__game-card position">
+                    <img src="./images/about-games-block/random-color-generator.png" alt="Game image"
+                        class="about-games-block__game-card-image">
+                    <span class="about-games-block__game-card-description">Game No. 6</span>
+                    <h3 class="about-games-block__game-card-name">Random <br> color <br> generator</h3>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
+
 </html>
