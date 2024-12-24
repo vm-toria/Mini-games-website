@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.all-blocks-container {
+    .main-block {
+        position: relative;
+        padding-left: calc(50% - 600px);
+        padding-right: calc(50% - 600px);
+        background-color: #E1FF8F;
+        height: 800px;
+
+        &__background-big-image {
+            position: absolute;
+            left: 852px;
+            top: 0px;
+        }
+
+        &__background-medium-image {
+            position: absolute;
+            left: 62px;
+            top: 94px;
+        }
+
+        &__background-small-image {
+            position: absolute;
+            left: 156px;
+            top: 69px;
+        }
+
+        &__title {
+            color: #202027;
+            font-size: 64px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            padding-top: 196px;
+        }
+
+        &__description {
+            color: #202027;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            margin-bottom: 48px;
+        }
+
+        &__cta {
+            width: 247px;
+            padding: 16px 28px;
+            gap: 10px;
+            border-radius: 60px;
+            border: 1px solid #202027;
+            background: #202027;
+            color: #FFF;
+            font: inherit;
+            font-size: 24px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        &__animation-stroke {
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+            overflow: hidden;
+            background-color: #BCEC30;
+            margin-top: 156px;
+            height: 90px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            right: 0;
+            gap: 51px;
+        }
+
+        &__animation-stroke-text {
+            color: #202027;
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        &__animation-stroke-icon {
+            height: 36px;
+            width: 36px;
+        }
+    }
+
+    .about-games-block {
+        background-color: #202027;
+        padding-left: calc(50% - 600px);
+        padding-right: calc(50% - 600px);
+        position: relative;
+        padding-bottom: 11px;
+
+        &__background-big-image {
+            position: absolute;
+            top: 109px;
+            left: 982px;
+            overflow: hidden;
+        }
+
+        &__background-small-image {
+            position: absolute;
+            top: 771px;
+            left: 25px;
+        }
+
+        &__background-medium-image {
+            position: absolute;
+            top: 825px;
+            left: 39px;
+        }
+
+        &__title {
+            color: #FFF;
+            font-size: 64px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            padding-top: 94px;
+        }
+
+        &__description {
+            color: #FFF;
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 72px;
+        }
+
+        &__container-game-card {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            gap: 32px;
+            position: relative;
+        }
+
+        &__game-card {
+            display: flex;
+            flex-direction: column;
+            background-color: #FFF;
+            text-decoration: none;
+            border-radius: 30px;
+        }
+
+        &__game-card-image {
+            width: 100%;
+        }
+
+        &__game-card-description {
+            color: #202027;
+            font-size: 16px;
+            font-weight: 500;
+            padding-right: 32px;
+            padding-left: 32px;
+            padding-top: 32px;
+            padding-bottom: 26px;
+        }
+
+        &__game-card-name {
+            color: #202027;
+            font-size: 32px;
+            font-weight: 700;
+            padding-right: 32px;
+            padding-left: 32px;
+            padding-bottom: 36px;
+        }
+
+        .position {
+            position: relative;
+            top: -36px;
+    }
+    }
+}
