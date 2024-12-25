@@ -5,7 +5,7 @@
 }
 
 .all-blocks-container {
-    .main-block {
+    .main {
         position: relative;
         padding-left: calc(50% - 600px);
         padding-right: calc(50% - 600px);
@@ -75,19 +75,19 @@
             gap: 51px;
         }
 
-        &__animation-stroke-text {
+        &__animation-text {
             color: #202027;
             font-size: 30px;
             font-weight: 700;
         }
 
-        &__animation-stroke-icon {
+        &__animation-icon {
             height: 36px;
             width: 36px;
         }
     }
 
-    .about-games-block {
+    .about {
         background-color: #202027;
         padding-left: calc(50% - 600px);
         padding-right: calc(50% - 600px);
@@ -128,7 +128,7 @@
             margin-bottom: 72px;
         }
 
-        &__container-game-card {
+        &__container-card {
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
@@ -137,7 +137,7 @@
             position: relative;
         }
 
-        &__game-card {
+        &__card {
             display: flex;
             flex-direction: column;
             background-color: #FFF;
@@ -145,11 +145,11 @@
             border-radius: 30px;
         }
 
-        &__game-card-image {
+        &__card-image {
             width: 100%;
         }
 
-        &__game-card-description {
+        &__card-description {
             color: #202027;
             font-size: 16px;
             font-weight: 500;
@@ -159,7 +159,7 @@
             padding-bottom: 26px;
         }
 
-        &__game-card-name {
+        &__card-name {
             color: #202027;
             font-size: 32px;
             font-weight: 700;
@@ -171,6 +171,6 @@
         .position {
             position: relative;
             top: -36px;
-    }
+        }
     }
 }
