@@ -15,13 +15,15 @@
 
 <body>
     <main class="all-blocks-container">
-        <section class="main">
+        <section class="main center">
             <img src="./images/main-block/background-icon-big.png" alt="background icon"
                 class="main__background-big-image">
             <img src="./images/main-block/background-icon-medium.png" alt="background icon"
                 class="main__background-medium-image">
             <img src="./images/main-block/background-icon-small.png" alt="background icon"
                 class="main__background-small-image">
+            <img src="./images/main-block/background-icons-mobile.png" alt="background icon"
+                class="main__background-mobile-image">
             <h1 class="main__title">Welcome to <br> mini games site</h1>
             <p class="main__description">You have to go through several exciting games. <br> If you're ready,
                 click
@@ -43,7 +45,7 @@
                 <img src="./images/main-block/star.png" class="main__animation-icon" alt="Star icon">
             </div>
         </section>
-        <section id="about-games" class="about">
+        <section id="about-games" class="about center" id="about-games">
             <img src="./images/about-games-block/background-icon-big.png" alt="background icon"
                 class="about__background-big-image">
             <img src="./images/about-games-block/background-icon-medium.png" alt="background icon"
@@ -59,42 +61,129 @@
                 <a href="#guess-the-number" class="about__card">
                     <img src="./images/about-games-block/guess-the-number.png" alt="Game image"
                         class="about__card-image">
-                    <span class="about__card-description">Game No. 1</span>
-                    <h3 class="about__card-name">Guess the number</h3>
+                    <div class="about__card-text">
+                        <div>
+                            <span class="about__card-description">Game No. 1</span>
+                        </div>
+                        <h3 class="about__card-name">Guess the number</h3>
+                    </div>
                 </a>
                 <a href="#simple-arithmetic" class="about__card">
                     <img src="./images/about-games-block/simple-arithmetic.png" alt="Game image"
                         class="about__card-image">
-                    <span class="about__card-description">Game No. 2</span>
-                    <h3 class="about__card-name">Simple <br> arithmetic</h3>
+                    <div class="about__card-text">
+                        <div>
+                            <span class="about__card-description">Game No. 2</span>
+                        </div>
+                        <h3 class="about__card-name">Simple <br> arithmetic</h3>
+                    </div>
                 </a>
                 <a href="#flip-the-text" class="about__card">
                     <img src="./images/about-games-block/flip-the-text.png" alt="Game image" class="about__card-image">
-                    <span class="about__card-description">Game No. 3</span>
-                    <h3 class="about__card-name">Flip the text</h3>
+                    <div class="about__card-text">
+                        <div>
+                            <span class="about__card-description">Game No. 3</span>
+                        </div>
+                        <h3 class="about__card-name">Flip the text</h3>
+                    </div>
                 </a>
-                <a href="#rock-paper-scissors" class="about__card position">
+                <a href="#rock-paper-scissors" class="about__card">
                     <img src="./images/about-games-block/rock-paper-scissors.png" alt="Game image"
                         class="about__card-image">
-                    <span class="about__card-description">Game No. 4</span>
-                    <h3 class="about__card-name">Rock,<br> paper,<br> scissors</h3>
+                    <div class="about__card-text">
+                        <div>
+                            <span class="about__card-description">Game No. 4</span>
+                        </div>
+                        <h3 class="about__card-name">Rock,<br> paper,<br> scissors</h3>
+                    </div>
                 </a>
-                <a href="#basic-quiz" class="about__card">
+                <a href="#basic-quiz" class="about__card position-bottom-middle">
                     <img src="./images/about-games-block/quiz.png" alt="Game image" class="about__card-image">
-                    <span class="about__card-description">Game No. 5</span>
-                    <h3 class="about__card-name">Basic <br> quiz</h3>
+                    <div class="about__card-text">
+                        <div>
+                            <span class="about__card-description">Game No. 5</span>
+                        </div>
+                        <h3 class="about__card-name">Basic <br> quiz</h3>
+                    </div>
                 </a>
-                <a href="#random-color-generator" class="about__card position">
+                <a href="#random-color-generator" class="about__card">
                     <img src="./images/about-games-block/random-color-generator.png" alt="Game image"
                         class="about__card-image">
-                    <span class="about__card-description">Game No. 6</span>
-                    <h3 class="about__card-name">Random <br> color <br> generator</h3>
+                    <div class="about__card-text">
+                        <div>
+                            <span class="about__card-description">Game No. 6</span>
+                        </div>
+                        <h3 class="about__card-name">Random <br> color <br> generator</h3>
+                    </div>
                 </a>
             </div>
         </section>
+        <section class="games center">
+            <h1 class="games__title">Mini games</h1>
+            <img src="./images/games-block/background-icon-top.png" alt="background icon" class="games__background-top">
+            <img src="./images/games-block/background-icon-bottom.png" alt="background icon"
+                class="games__background-bottom">
+            <div class="games__card-container">
+                <article class="games__card-right" id="guess-the-number">
+                    <div class="games__card-content">
+                        <h2 class="games__card-content-title">Guess the number</h2>
+                        <h3 class="games__card-content-description">Try to guess a random number <br> from 1 to 100.
+                        </h3>
+                        <button class="games__card-button">Play!</button>
+                    </div>
+                    <img src="./images/about-games-block/guess-the-number.png" alt="Game image"
+                        class="games__card-image">
+                </article>
+                <article class="games__card-left" id="simple-arithmetic">
+                    <img src="./images/about-games-block/simple-arithmetic.png" alt="Game image"
+                        class="games__card-image">
+                    <div class="games__card-content">
+                        <h2 class="games__card-content-title">Simple <br> arithmetic</h2>
+                        <h3 class="games__card-content-description">Try to solve simple <br> arithmetic problems.</h3>
+                        <button class="games__card-button">Play!</button>
+                    </div>
+                </article>
+                <article class="games__card-right" id="flip-the-text">
+                    <div class="games__card-content">
+                        <h2 class="games__card-content-title">Flip the text</h2>
+                        <h3 class="games__card-content-description">Try entering text that <br> will be upside down.
+                        </h3>
+                        <button class="games__card-button">Play!</button>
+                    </div>
+                    <img src="./images/about-games-block/flip-the-text.png" alt="Game image" class="games__card-image">
+                </article>
+                <article class="games__card-left" id="basic-quiz">
+                    <img src="./images/about-games-block/quiz.png" alt="Game image" class="games__card-image">
+                    <div class="games__card-content">
+                        <h2 class="games__card-content-title">Basic <br> quiz</h2>
+                        <h3 class="games__card-content-description">Answer the multiple choice <br> quiz questions.</h3>
+                        <button class="games__card-button">Play!</button>
+                    </div>
+                </article>
+                <article class="games__card-right" id="rock-paper-scissors">
+                    <div class="games__card-content">
+                        <h2 class="games__card-content-title">Rock, <br> paper,<br> scissors</h2>
+                        <h3 class="games__card-content-description">Play a popular game <br> against the computer.</h3>
+                        <button class="games__card-button">Play!</button>
+                    </div>
+                    <img src="./images/about-games-block/rock-paper-scissors.png" alt="Game image"
+                        class="games__card-image">
+                </article>
+                <article class="games__card-left" id="random-color-generator">
+                    <img src="./images/about-games-block/random-color-generator.png" alt="Game image"
+                        class="games__card-image">
+                    <div class="games__card-content">
+                        <h2 class="games__card-content-title">Random <br> color <br> generator</h2>
+                        <h3 class="games__card-content-description">A game where when you click a button <br> the page
+                            background changes to a random one.</h3>
+                        <button class="games__card-button">Play!</button>
+                    </div>
+                </article>
+            </div>
+        </section>
     </main>
-    <footer>
-
+    <footer class="footer-container">
+        <h3 class="footer-container__content">All rights reserved</h3>
     </footer>
 </body>
 
