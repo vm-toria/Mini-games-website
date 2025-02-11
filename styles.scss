@@ -1,32 +1,4 @@
-// Variables for colors
-$primary-color: #202027;
-$secondary-color: #BCEC30;
-$accent-color: #E1FF8F;
-$button-bg-color: #202027;
-$button-hover-bg-color: #FFF;
-$text-color: #202027;
-$background-color-light: #FFF;
-$background-color-dark: #202027;
-$card-bg-color: #F7F7F7;
-
-// Variables for font sizes
-$font-size-large: 64px;
-$font-size-medium: 24px;
-$font-size-small: 16px;
-$font-size-button: 24px;
-$font-size-title: 32px;
-$font-size-cta: 24px;
-
-// Variables for spacing
-$padding-small: 16px;
-$padding-medium: 28px;
-$padding-large: 65px;
-$padding-x-large: 75px;
-
-// Font family
-$font-family: 'Montserrat', sans-serif;
-
-
+@import 'variables';
 
 * {
     margin: 0;
@@ -43,55 +15,58 @@ $font-family: 'Montserrat', sans-serif;
         background-color: $accent-color;
         height: 800px;
 
-        &__background-mobile-image {
+        &__background-mobile-image-big,
+        &__background-mobile-image-medium,
+        &__background-mobile-image-small {
             display: none;
         }
 
         &__background-big-image {
             position: absolute;
-            left: 852px;
+            right: 0px;
             top: 0px;
         }
 
         &__background-medium-image {
             position: absolute;
             left: 62px;
-            top: 94px;
+            top: 69px;
         }
 
         &__background-small-image {
             position: absolute;
-            left: 156px;
-            top: 69px;
+            right: 344px;
+            bottom: 149px;
         }
 
         &__title {
             color: $primary-color;
             font-size: $font-size-large;
-            font-weight: 700;
+            font-weight: $font-weight-bold;
             margin-bottom: $padding-small;
             padding-top: 196px;
+
         }
 
         &__description {
             color: $primary-color;
             font-size: $font-size-medium;
-            font-weight: 400;
-            line-height: 32px;
-            margin-bottom: 48px;
+            font-weight: $font-weight-regular;
+            line-height: $line-height-medium;
+            margin-bottom: $margin-medium-large;
         }
 
         &__cta {
             width: 247px;
             padding: $padding-small $padding-large;
             gap: 10px;
-            border-radius: 60px;
+            border-radius: $border-radius-large;
             border: 1px solid $primary-color;
             background: $button-bg-color;
             color: $background-color-light;
             font: inherit;
-            font-size: $font-size-cta;
-            font-weight: 600;
+            font-size: $font-size-medium;
+            font-weight: $font-weight-bold;
             text-decoration: none;
             transition: background-color 0.3s ease, color 0.3s ease;
 
@@ -118,8 +93,8 @@ $font-family: 'Montserrat', sans-serif;
 
         &__animation-text {
             color: $primary-color;
-            font-size: 30px;
-            font-weight: 700;
+            font-size: $font-size-title;
+            font-weight: $font-weight-bold;
             text-transform: uppercase;
         }
 
@@ -139,7 +114,7 @@ $font-family: 'Montserrat', sans-serif;
         &__background-big-image {
             position: absolute;
             top: 109px;
-            left: 982px;
+            right: 0px;
             overflow: hidden;
         }
 
@@ -152,13 +127,13 @@ $font-family: 'Montserrat', sans-serif;
         &__background-medium-image {
             position: absolute;
             top: 825px;
-            left: 39px;
+            left: 40px;
         }
 
         &__title {
             color: $background-color-light;
             font-size: $font-size-large;
-            font-weight: 700;
+            font-weight: $font-weight-bold;
             padding-bottom: $padding-small;
             padding-top: 94px;
         }
@@ -166,8 +141,8 @@ $font-family: 'Montserrat', sans-serif;
         &__description {
             color: $background-color-light;
             font-size: $font-size-medium;
-            font-weight: 400;
-            padding-bottom: 72px;
+            font-weight: $font-weight-regular;
+            padding-bottom: $padding-x-large;
         }
 
         &__container-card {
@@ -184,7 +159,7 @@ $font-family: 'Montserrat', sans-serif;
             align-items: flex-start;
             background-color: $background-color-light;
             text-decoration: none;
-            border-radius: 30px;
+            border-radius: $border-radius-medium;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             position: relative;
 
@@ -201,31 +176,31 @@ $font-family: 'Montserrat', sans-serif;
         &__card-description {
             color: $primary-color;
             font-size: $font-size-small;
-            font-weight: 500;
+            font-weight: $font-weight-medium;
             background-color: $card-bg-color;
-            padding-left: 16px;
-            padding-right: 16px;
-            padding-top: 8px;
-            padding-bottom: 10px;
-            border-radius: 52px;
+            padding-left: $padding-small;
+            padding-right: $padding-small;
+            padding-top: $padding-xs;
+            padding-bottom: $padding-xs;
+            border-radius: $border-radius-large;
         }
 
         &__card-text {
-            margin-top: 32px;
-            margin-left: 32px;
+            margin-top: $margin-medium;
+            margin-left: $margin-medium;
         }
 
         &__card-name {
             color: $primary-color;
             font-size: $font-size-title;
-            font-weight: 700;
-            margin-right: 32px;
-            margin-bottom: 36px;
-            margin-top: 16px;
+            font-weight: $font-weight-bold;
+            margin-right: $margin-medium;
+            margin-bottom: $margin-medium;
+            margin-top: $margin-small;
         }
 
         .position-bottom-middle {
-            margin-top: 39px;
+            margin-top: $margin-medium;
         }
     }
 
@@ -234,14 +209,14 @@ $font-family: 'Montserrat', sans-serif;
         background-color: $primary-color;
         padding-left: calc(50% - 600px);
         padding-right: calc(50% - 600px);
-        padding-top: 46px;
+        padding-top: $margin-medium-large;
         padding-bottom: 144px;
 
         &__title {
             color: $background-color-light;
             font-size: $font-size-large;
-            font-weight: 700;
-            padding-bottom: 72px;
+            font-weight: $font-weight-bold;
+            padding-bottom: $padding-x-large;
         }
 
         &__card-container {
@@ -255,8 +230,7 @@ $font-family: 'Montserrat', sans-serif;
             display: flex;
             width: 100%;
             background-color: $background-color-light;
-            border-radius: 48px;
-            box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+            border-radius: $line-height-large;
             height: 504px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             position: relative;
@@ -272,22 +246,22 @@ $font-family: 'Montserrat', sans-serif;
         }
 
         &__card-content {
-            padding-top: 48px;
-            padding-left: 48px;
+            padding-top: $padding-medium-large;
+            padding-left: $padding-medium-large;
         }
 
         &__card-content-title {
             color: $primary-color;
-            font-size: 48px;
-            font-weight: 700;
+            font-size: $font-size-xl;
+            font-weight: $font-weight-bold;
         }
 
         &__card-content-description {
             padding-bottom: 36px;
-            padding-top: 24px;
+            padding-top: $padding-medium;
             color: $primary-color;
             font-size: $font-size-medium;
-            font-weight: 400;
+            font-weight: $font-weight-regular;
         }
 
         &__card-image {
@@ -298,13 +272,13 @@ $font-family: 'Montserrat', sans-serif;
             background-color: $button-bg-color;
             color: $background-color-light;
             font: inherit;
-            font-size: $font-size-button;
-            font-weight: 600;
+            font-size: $font-size-medium;
+            font-weight: $font-weight-bold;
             padding-left: $padding-x-large;
             padding-right: $padding-x-large;
             padding-top: $padding-small;
             padding-bottom: $padding-small;
-            border-radius: 60px;
+            border-radius: $border-radius-large;
             transition: background-color 0.3s ease, color 0.3s ease;
 
             &:hover {
@@ -315,14 +289,14 @@ $font-family: 'Montserrat', sans-serif;
 
         &__background-bottom {
             position: absolute;
-            left: 1276px;
+            right: 45px;
             top: 88px;
         }
 
         &__background-top {
             position: absolute;
-            left: 1248px;
-            top: 3389px;
+            right: 52px;
+            bottom: 25px;
         }
     }
 }
@@ -331,12 +305,12 @@ $font-family: 'Montserrat', sans-serif;
     background-color: $secondary-color;
 
     &__content {
-        padding-top: 61px;
-        padding-bottom: 60px;
+        padding-top: $padding-large;
+        padding-bottom: $padding-large;
         display: flex;
         justify-content: center;
         font-size: $font-size-medium;
-        font-weight: 600;
+        font-weight: $font-weight-medium;
         color: #000;
     }
 }
