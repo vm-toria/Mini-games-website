@@ -95,7 +95,6 @@
     height: 700px;
   }
   .all-blocks-container .main__title {
-    font-size: 32px;
     padding-top: 147px;
     font-size: 40px;
     line-height: 48px;
@@ -155,9 +154,10 @@
   }
   .all-blocks-container .games__title {
     color: #FFF;
-    font-size: 32px;
+    font-size: 40px;
     padding-bottom: 48px;
     padding-top: 48px;
+    line-height: 49px;
   }
   .all-blocks-container .games__card-container {
     display: flex;
@@ -176,8 +176,8 @@
   }
   .all-blocks-container .games__card-content {
     padding-top: 28px;
-    padding-bottom: 28px;
-    padding-left: 16px;
+    padding-bottom: 32px;
+    padding-left: 28px;
   }
   .all-blocks-container .games__card-content-title {
     font-size: 32px;
@@ -190,7 +190,7 @@
   }
   .all-blocks-container .games__card-image {
     width: auto;
-    height: 343px;
+    height: 284px;
   }
   .all-blocks-container .games__card-button {
     font-size: 16px;
@@ -203,9 +203,15 @@
   .all-blocks-container .games__card-content-description br {
     display: none;
   }
+  .footer-container {
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .footer-container__content {
-    padding-top: 16px;
-    padding-bottom: 16px;
     font-size: 16px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }/*# sourceMappingURL=tablet.css.map */
